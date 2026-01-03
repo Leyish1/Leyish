@@ -1093,6 +1093,13 @@ canvas {
   padding: 20px;
 }
 
+.portlist #Explore {
+  width: 80%;
+}
+   
+.portlist #Explore div {
+  flex-direction: column;
+}
 
 }
 
