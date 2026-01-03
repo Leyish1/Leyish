@@ -137,7 +137,7 @@ a {
   width: 380px;
   height: 380px;
   margin: 0;
-   justify-content: center;
+  justify-content: center;
   align-items: center;
   justify-items: center;
 }
@@ -502,6 +502,7 @@ a {
   font-size: 14px;
   width: 20%;
   height: 150px;
+  cursor: pointer;
   padding: 10px 20px;
   border-radius: 10px;
   background-color: var(--border-color);
@@ -515,6 +516,42 @@ a {
 
 .externalpage .portlist .port .iconify {
   font-size: 45px;
+}
+
+.portlist #Explore {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  z-index: 100;
+  border-radius: 20px;
+  padding: 20px 40px;
+  flex-direction: column;
+  background-color:var(--fill-button);
+  border: 1px solid var(--border-color);
+  gap: 20px;
+  margin: 0;
+  margin-top: 100px;
+}
+
+.portlist #Explore div {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  gap: 20px;
+}
+
+.portlist #Explore div a {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  gap: 10px;
+}
+
+#Explore div a .iconify {
+  font-size: 30px;
 }
 
 /* =========================
@@ -1058,6 +1095,5 @@ canvas {
 
 
 }
-
 
 
