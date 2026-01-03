@@ -284,10 +284,26 @@ My work spans mobile app interfaces, web design, branding, and marketing visuals
         Pinterest
       </a>
 
-        <a href="https://drive.google.com/drive/folders/1zKtR079sCmI6-QbvpApF_AulWVT1q4ln?usp=drive_link" class="port">
+        <a class="port" onclick="toggleExplore()">
         <span class="iconify" data-icon="logos:google-drive"></span>
         Drive
       </a>
+
+      <div id="Explore">
+       <span>Choose one you’d like to explore.</span>
+       <div>
+           <a href="https://drive.google.com/drive/folders/1zKtR079sCmI6-QbvpApF_AulWVT1q4ln?usp=drive_link" class="port">
+            <span class="iconify" data-icon="bx:radio-circle"></span>
+            FLYER DESIGNS
+           </a>
+
+            <a href="https://drive.google.com/drive/folders/1HYtA9Oc9H6Syp4VcLOcPPRuK5GzGc5lg?usp=sharing" class="port">
+            <span class="iconify" data-icon="bx:radio-circle"></span>
+            BRANDING
+           </a>
+       </div> 
+       
+     </div>
    
 
    </div>
@@ -665,10 +681,24 @@ tabs[0].click();
 
 
 <script>
-  document.getElementById("year").textContent =
-    new Date().getFullYear();
-</script>
+  const explore = document.getElementById("Explore");
 
+  function toggleExplore() {
+    if (explore.style.display === "none" || explore.style.display === "") {
+      explore.style.display = "flex";
+    } else {
+      explore.style.display = "none";
+    }
+  }
+
+  // Hide explore if click outside
+  document.addEventListener("click", (e) => {
+    // If the click is NOT on the toggle link AND NOT inside Explore
+    if (!e.target.closest(".port") && !e.target.closest("#Explore")) {
+      explore.style.display = "none";
+    }
+  });
+</script>
 
 
 
