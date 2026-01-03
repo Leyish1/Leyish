@@ -137,6 +137,9 @@ a {
   width: 380px;
   height: 380px;
   margin: 0;
+   justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 .hero-img {
@@ -1055,5 +1058,6 @@ canvas {
 
 
 }
+
 
 
