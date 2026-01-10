@@ -847,6 +847,10 @@ canvas {
     gap: 5px;
   }
 
+  .header .logo {
+    width: 40px;
+  }
+
   .hero {
     text-align: center;
     padding: 30px 20px;
